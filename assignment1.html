@@ -1,0 +1,643 @@
+<!doctype html>
+<html>
+<head>
+    <title>lazeez-24x7</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: dimgray;
+            margin: 0px;
+            font-family: Arial, Helmet, Freesans, sans-serif;
+        }
+        #top{
+            position: fixed;
+            background-color: antiquewhite;
+            width: 100%;
+            height: 63px;
+            padding-top: 0px;
+            float: left;
+            z-index: 9999;
+        }
+        #footer1{
+            position: static;
+            background-color: antiquewhite;
+            width: 100%;
+            height:70px;
+            
+            float: right;
+            text-align: left
+                ;
+            
+        }
+        
+        #pic{
+            background-image: url("images/back.jpg");
+            background-repeat: 1;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        li{
+            
+            float:left;
+            list-style-type: none;
+            margin: 10px 70px 20px 10px;
+            font-size: 200%;
+            
+            
+            
+        }
+        .topa{
+            border: 5px coral solid;
+            border-radius: 10px;
+        }
+        .topa:hover{
+            color:red;
+            font-style: oblique;
+            
+        }
+        .topa1{
+            
+            border: 2px dimgray solid;
+            border-radius: 10px;
+        }
+        .topa1:hover{
+            color:red;
+            font-style: oblique;
+            
+        }
+        .imga{
+            margin-top:-30px
+        }
+        .imga:hover{
+            height: 115px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .button{
+            background-color: greenyellow;
+            position: relative;
+            left:-150px;
+            top:500px;
+            color: fuchsia;
+            border: 5px greenyellow solid;
+            border-radius: 10px;
+            
+            z-index: 2;
+            font-size: 300%;
+        }
+        .button1{
+            background-color: gainsboro;
+            border-radius: 10px;
+            font-display: swap;
+            font-family: fantasy;
+            font-size: 250%;
+            position: relative;
+            left:800px;
+            top:300px;
+            color: fuchsia;
+        }
+        .button4{
+            
+            background-color: gainsboro;
+            border-radius: 10px;
+            font-display: swap;
+            font-family: fantasy;
+            font-size: 250%;
+            position: relative;
+            left:600px;
+            top:30px;
+            color: fuchsia;
+        }
+        .button2{
+            background-color: gainsboro;
+            border-radius: 10px;
+            font-display: swap;
+            font-family: sans-serif;
+            font-size: 250%;
+            position: relative;
+            left:600px;
+            top:350px;
+            color: fuchsia;
+        }
+        .button3{
+            background-color: gainsboro;
+            border-radius: 10px;
+            font-display: swap;
+            font-family: cursive;
+            font-size: 150%;
+            position: relative;
+            left:310px;
+            top:400px;
+            color: fuchsia;
+        }
+        .button:hover{
+            font-size: 320%;
+        }
+        .card1{
+            background-color:coral;
+            width: 350px;
+            height: auto;
+            float: left;
+            border-radius: 20px;
+            position: relative;
+            left: 100px;
+            top: 50px;
+            
+            margin: 70px 40px 70px 40px;
+            
+        }
+        .card1:hover{
+            width: 380px;
+            height: auto;
+            
+            
+        }
+        .h{
+            margin: 0px;
+        }
+        .hj{
+            margin: 8px;
+        }
+        .add {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        
+
+        .add1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid green;
+            
+        }
+        .add1:hover {
+        background-color: green;
+        color: white;
+        }
+        .add1:focus{
+            background: green;
+        }
+        
+        .search-container button {
+            float: none;
+            display: block;
+            text-align: left;
+            
+            margin: 0;
+            padding: 0px;
+            border-radius: 10px;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            left:600px;
+            top:30px;
+            float :left;
+            color: fuchsia;
+        }
+        .search-container i {
+            float: none;
+            display: block;
+            text-align: left;
+            
+            margin: 0;
+            padding: 0px;
+            border-radius: 10px;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            left:10px;
+            top:8px;
+            float :left;
+            color: fuchsia;
+        }
+        .search-container2 button {
+            float: none;
+            display: block;
+            text-align: left;
+            
+            margin: 0;
+            padding: 14px;
+            border: 5px black solid;
+            border-radius: 10px;
+            position: relative;
+            
+            left:0px;
+            top:30px;
+            float :left;
+            color: fuchsia;
+        }
+        .search-container2 button:hover{
+            width: 100px;
+            height: 65px;
+        }
+        .search-container button:hover{
+            width: 50px;
+            height: 50px;
+        }
+        
+        
+        .search-container input {
+            float: left;
+            display: block;
+            text-align: left;
+            width: 250px;
+            height: 10px;
+            margin: 0;
+            padding: 14px;
+            border: 5px black solid;
+            border-radius: 10px;
+            position: relative;
+            left:600px;
+            top:30px;
+            color: fuchsia;
+            
+        }
+        .search-container input:hover{
+            width: 300px;
+            height: 15px;
+        }
+        .flex-container {
+            float: left;
+            margin-top: 100px;
+            margin-left: 100px;
+            margin-right: 200px;
+            
+            margin-bottom: 100px;
+            display: flex;
+
+            flex-direction: column;
+            background-color: dimgray;
+        }   
+        .flex-container > p {
+            background-color: sandybrown;
+            color: white;
+            width: 420px;
+            border: 3px sandybrown solid;
+            border-radius: 20px;
+            margin: 1px;
+            text-align: left;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        .flex-container > p1 {
+            background-color: sandybrown;
+            color: white;
+            width: 420px;
+            border: 3px sandybrown solid;
+            border-radius: 20px;
+            margin: 1px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        .flex-container > p:hover{
+            width: 440px;
+            
+        }
+        .search-container2 input {
+            float: left;
+            display: block;
+            text-align: left;
+            width: 250px;
+            height: 10px;
+            margin: 0;
+            padding: 14px;
+            border: 5px black solid;
+            border-radius: 10px;
+            position: relative;
+            left:0px;
+            top:30px;
+            color: fuchsia;
+            
+        }
+        .search-container2 input:hover{
+            width: 300px;
+            height: 15px;
+        }
+        .radio1{
+            font-size: 10px;
+            color: cadetblue;
+            
+        }
+               .fa-instagram {
+          background: #125688;
+          color: white;
+        }
+                .fa-youtube {
+          background: #bb0000;
+          color: white;
+        }
+                .fa-linkedin {
+          background: #007bb5;
+          color: white;
+        }
+        .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 50px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+        }
+
+        .fa-twitter {
+          background: #55ACEE;
+          color: white;
+        }
+        .go-to-top{
+            float:right;
+        }
+       
+        
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <a name="Home"></a>    
+    <div id="top" >
+        <ul>
+            <li ><img src="images/lazeez.png" height=100px float:left class="imga"  /></li>
+            <li ><a href="#Home" class="topa">Home</a></li>
+            <li ><a href="#Recommendations" class="topa">Recommendations</a></li>
+            <li ><a href="#Specialities" class="topa">Specialties</a></li>
+            <li><a href="#Reviews" class="topa">Reviews</a></li>
+        </ul>
+    </div>
+    <div >
+        <span class="button1">SPICY & LAZEEZ</span>
+        <span class="button2">Made With Love</span>
+        <span class="button3">Food Tastes Good When Eaten With Family</span>
+        <a href="#Specialities" class="button">check our specialities</a>
+    <div ><img src="images/back.jpg" width=100% height=100%/></div>
+        
+    </div>
+
+
+<a name="Specialities"></a>
+    <div><br /><br /><br /><br />
+        <span class="button4">Specialities</span><br />
+        <span class="button4">Best Food & Best Price</span>
+    </div><br />
+    <div>
+    <div class="card1"  >
+        
+        <li><h6 class="h">Best Sellers:#1</h6></li>
+        <img src="images/item1.jpg" width="350px" height="350px" />
+            <li><h4 class="h">Mexican tacos <img src="images/veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Mexican tacos with avocado, grilled corn, red cabbage slaw and chili salsa on wooden board black shale table.</h6></li>
+            <li><h4 class="h">₹999 </h4><h6 class="h"> <strike>₹1,499</strike> Save ₹500 (33%)</h6></li>
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div>
+    <div class="card1"  >
+        
+        <li><h6 class="h">Best Sellers:#2</h6></li>
+        <img src="images/item2.jpg" width="350px" height="350px" />
+            <li><h4 class="h">Chicken shish kebab <img src="images/non-veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Chicken shish kebab with cherry tomatoes, and vegetables. On a wooden background.</h6></li>
+            <li><h4 class="h">₹1,499 </h4><h6 class="h"> <strike>₹1,999</strike>  Save ₹500 (25%)</h6></li> 
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div>
+    <div class="card1"  >
+        
+        <li><h6 class="h">Best Sellers:#3</h6></li>
+        <img src="images/item3.jpg" width="350px" height="350px" />
+            <li><h4 class="h">sandwiches <img src="images/non-veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Tasty sandwiches with egg, avocado and vegetables on stone black background.</h6></li>
+            <li><h4 class="h">₹1,099 </h4><h6 class="h"> <strike>₹1,199</strike> Save ₹100 (8%)</h6></li>  
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="card1"  >
+        
+        <li><h6 class="h">Best Sellers:#4</h6></li>
+        <img src="images/item4.jpg" width="350px" height="350px" />
+            <li><h4 class="h">vegan green tachos <img src="images/veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">gluten-free vegan green tachos made from chickpea flour with spinach and toppings from baked cauliflower and lettuce with sweet and sour sauce based on soy sauce.</h6></li>
+            <li><h4 class="h">₹799 </h4><h6 class="h"> <strike> ₹999</strike> Save ₹100 (10%)</h6></li>
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div>
+    <div class="card1"  >
+        
+        <li><h6 class="h">Best Sellers:#5</h6></li>
+        <img src="images/item5.jpg" width="350px" height="350px" />
+            <li><h4 class="h">Burritos wraps <img src="images/veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Burritos wraps with beef and vegetables on black background. Beef burrito, mexican food.</h6></li>
+            <li><h4 class="h">₹749 </h4><h6 class="h"> <strike>₹799</strike> Save ₹50 (6%)</h6></li>  
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div>
+    <div class="card1"  >
+        
+        <li><h6 class="h">Best Sellers::#6</h6></li>
+        <img src="images/item6.jpg" width="350px" height="350px" />
+            <li><h4 class="h">Grilled chicken &ensp; and rice <img src="images/non-veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Grilled chicken, rice, spicy chickpeas, avocado, cabbage, pepper buddha bowl on dark background.
+</h6></li>
+            <li><h4 class="h">₹699 </h4><h6 class="h"> <strike>₹759 </strike>   Save ₹60 (8%)</h6></li> 
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div>
+
+    <div class="container"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div class="main" id="Recommendations"></div><br /><br /><br /><br /><br />
+        <span class="button4">Our Recommendations</span><br />
+        <span class="button4">Search Your Taste Here</span>
+        
+    </div>
+    <div class="search-container">
+    <form >
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"  ><i class=" fa fa-search"></i></button>
+    </form>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br />
+    <div class="card1"  >
+        
+        <li><h6 class="h">Eat Repeat:#1</h6></li>
+        <img src="images/item7.jpg" width="350px" height="350px" />
+            <li><h4 class="h">Juicy American burger <img src="images/veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Juicy American burger, hamburger or cheeseburger with two beef patties, with sauce and basked on a black background. Concept of American fast food.</h6></li>
+            <li><h4 class="h"₹799></h4><h6 class="h"> <strike>₹999 </strike>  
+                Save ₹100 (10%)</h6></li> 
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div>
+    <div class="card1"  >
+        
+        <li><h6 class="h">Eat Repeat:#2</h6></li>
+        <img src="images/item8.jpg" width="350px" height="350px" />
+            <li><h4 class="h">grilled Tomahawk <img src="images/non-veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">freshly grilled Tomahawk steaks on wooden cutting board.</h6></li>
+            <li><h4 class="h">₹1,499 </h4><h6 class="h"> <strike>₹1,999</strike>  Save ₹500 (25%)</h6></li> 
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div>
+    <div class="card1"  >
+        
+        <li><h6 class="h">Eat Repeat:#3</h6></li>
+        <img src="images/item9.jpg" width="350px" height="350px" />
+            <li><h4 class="h">pork grilled <img src="images/non-veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Closeup of pork ribs grilled with BBQ sauce and caramelized in honey on a bed of salad frisse. Tasty snack to beer on a wooden Board .</h6></li>
+            <li><h4 class="h">₹749</h4><h6 class="h"> <strike>₹799 </strike>  
+                    Save ₹50 (6%)</h6></li> 
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="card1"  >
+        
+        <li><h6 class="h">Eat Repeat:#4</h6></li>
+        <img src="images/item10.jpg" width="350px" height="350px" />
+            <li><h4 class="h">Noodles with&ensp;&ensp; meat <img src="images/non-veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Noodles with meat and vegetables isolated on white background.</h6></li>
+            <li><h4 class="h">₹699 </h4><h6 class="h"> <strike>₹759</strike>  
+                Save ₹60 (8%)</h6></li> 
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div>
+    <div class="card1"  >
+        
+        <li><h6 class="h">Eat Repeat:#5</h6></li>
+        <img src="images/item11.jpg" width="350px" height="350px" />
+            <li><h4 class="h">oriental dishfrom noodles <img src="images/non-veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Beautiful oriental dishes. Beautiful and delicious Oriental Asian dishes, hot dishes from noodles, meat and vegetables with greens</h6></li>
+            <li><h4 class="h"₹799</h4><h6 class="h"> <strike>₹999 </strike>  
+                Save ₹100 (10%)</h6></li>
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div>
+    <div class="card1"  >
+        
+        <li><h6 class="h">Eat Repeat:#6</h6></li>
+        <img src="images/item12.jpg" width="350px" height="350px" />
+            <li><h4 class="h">Chicken skewers <img src="images/non-veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Chicken skewers with slices of apples and chili. </h6></li>
+            <li><h4 class="h">₹1,499 </h4><h6 class="h"> <strike>₹1,999</strike>  Save ₹500 (25%)</h6></li>
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="card1"  >
+        
+        <li><h6 class="h">Eat Repeat:#7</h6></li>
+        <img src="images/item13.jpg" width="350px" height="350px" />
+            <li><h4 class="h">Green salad <img src="images/non-veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Green salad with baked chicken breast at white kitchen table. Healthy food, clean eating concept.</h6></li>
+            <li><h4 class="h">₹749</h4><h6 class="h"> <strike>₹799 </strike>  
+                    Save ₹50 (6%)</h6></li> 
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div>
+    <div class="card1"  >
+        
+        <li><h6 class="h">Eat Repeat:#8</h6></li>
+        <img src="images/item14.jpg" width="350px" height="350px" />
+            <li><h4 class="h">Noodles with steam <img src="images/veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Noodles with steam and smoke in bowl on wooden background, selective focus. Asian meal on a table, junk food.</h6></li>
+            <li><h4 class="h">₹699 </h4><h6 class="h"> <strike>₹759</strike>  
+                Save ₹60 (8%)</h6></li>
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div>
+    <div class="card1"  >
+        
+        <li><h6 class="h">Eat Repeat:#9</h6></li>
+        <img src="images/item15.jpg" width="350px" height="350px" />
+            <li><h4 class="h">Chicken tikka  <img src="images/non-veg.png" width="35px" height="35px" /></h4></li>
+            <li><h6 class="h">Chicken tikka masala spicy curry meat food Butter chicken with rice and naan bread.</h6></li>
+            <li><h4 class="h">₹1,499 </h4><h6 class="h"> <strike>₹1,999</strike>  Save ₹500 (25%)</h6></li> 
+        <button  class="add add1" font-size="16px">Add+</button>
+    </div>
+    <div class="container"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <a name="Reviews"></a><br /><br /><br /><br /><br />
+        <span class="button4">Reviews</span><br />
+        <span class="button4">Your feedback:our steps</span>
+        
+    </div>
+    <br />
+    <div class="flex-container">
+        <p1 >Reviews</p1>
+        <p><img src="images/prachi.jpg"  align="left" width="100px" height="100px"/>&ensp;Prachi Desai&ensp;<img src="images/10.jpg" align="right"></p>
+        <p><img src="images/elon.jpg" width="100px" align="left" height="100px"/>&ensp;Elon Musk&ensp;<img src="images/10.jpg" align="right"></p>
+        <p><img src="images/kevin.jpg" width="100px" height="100px" align="left"/>&ensp;Kevin uppal&ensp;<img src="images/9.jpg" align="right"></p>
+        <p><img src="images/cryptoman.jpg" width="100px" height="100px" align="left"/>&ensp;Cryptoman&ensp;<img src="images/9.jpg" align="right"></p><br />
+        <p>Reviews:12.4k&ensp;<a href="" class="topa">More Reviews</a></p>
+        
+    </div>
+    <div class="flex-container" float="left">
+        <p>Give Review</p>
+         <p>
+            <div class="search-container2">
+                <form >
+                    <input type="text" placeholder="Name"  >
+                <br /><input type="text" placeholder="Email-id" width="400px">
+                    <br /><br /><br /><br /><br /><br />
+                    <h3>
+                    YOUR RATING<br />
+                    </h3>
+                    <input type="radio" id="1" name="rating" class="radio1" value="1">
+                    <label for="1"><h3 class="hj">01</h3></label><br>
+                    <input type="radio" id="2" name="rating" value="2">
+                    <label for="2"><h3 class="hj">02</h3></label><br>
+                    <input type="radio" id="3" name="rating" value="3">
+                    <label for="3"><h3 class="hj">03</h3></label><br>
+                    <input type="radio" id="4" name="rating" value="4">
+                    <label for="4"><h3 class="hj">04</h3></label><br>
+                    <input type="radio" id="5" name="rating" value="5">
+                    <label for="5"><h3 class="hj">05</h3></label><br>
+                    <input type="radio" id="6" name="rating" value="6">
+                    <label for="6"><h3 class="hj">06</h3></label><br>
+                    <input type="radio" id="7" name="rating" value="7">
+                    <label for="7"><h3 class="hj">07</h3></label><br>
+                    <input type="radio" id="8" name="rating" value="8">
+                    <label for="8"><h3 class="hj">08</h3></label><br>
+                    <input type="radio" id="9" name="rating" value="9">
+                    <label for="9"><h3 class="hj">09</h3></label><br>
+                    <input type="radio" id="10" name="rating" value="10">
+                    <label for="10"><h3 class="hj">10</h3></label><br>
+                <br /><button type="submit"  >SUBMIT</button><br />
+                </form>
+                
+            </div><br /><br /><br />
+        <h3>Your information is safe with us.</h3>
+        </p>
+    </div>
+    <div class="go-to-top">
+        <b>To The Moon</b>
+        <a href="#Home"	><i class="fa fa-cloud"></i></a>
+    </div>
+    
+    <div id="footer1">
+        <span>
+            &ensp;&ensp;&ensp;&ensp;Site created by <a href="https://github.com/Amitkumar9199" class="topa1" target="_blank">Amit Kumar</a>. © <a href="https://github.com/Amitkumar9199" class="topa1" target="_blank">Copyright</a> 2021 RutherFood. All rights reserved. • <a href="https://github.com/Amitkumar9199" class="topa1" target="_blank">Privacy Policy</a>https://github.com/Amitkumar9199
+        </span>
+    
+    
+        <a href="https://www.facebook.com/profile.php?id=100055956124030" class="fa fa-facebook"  target="_blank"></a>
+        <a href="https://twitter.com/Amit10087642?s=08" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/amit-kumar-3b80031b9" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://youtube.com/channel/UCwaG1zZyfcBjW5d27aER8HQ" class="fa fa-youtube" target="_blank"></a>
+        <a href="https://www.instagram.com/invites/contact/?i=54wr3x0h1db1&utm_content=joadsd2" class="fa fa-instagram" target="_blank"></a>
+        
+    </div>
+</div>
+    
+</body>
+</html>
