@@ -182,6 +182,9 @@
             cursor: pointer;
             border-radius: 20px;
         }
+        .add:focus:after{
+            content: " **moved to cart**";
+        }
         
 
         .add1 {
@@ -472,7 +475,7 @@
         
     </div>
     <div class="search-container">
-    <form >
+    <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search">
       <button type="submit"  ><i class=" fa fa-search"></i></button>
     </form>
@@ -578,14 +581,14 @@
         <p><img src="images/elon.jpg" width="100px" align="left" height="100px"/>&ensp;Elon Musk&ensp;<img src="images/10.jpg" align="right"></p>
         <p><img src="images/kevin.jpg" width="100px" height="100px" align="left"/>&ensp;Kevin uppal&ensp;<img src="images/9.jpg" align="right"></p>
         <p><img src="images/cryptoman.jpg" width="100px" height="100px" align="left"/>&ensp;Cryptoman&ensp;<img src="images/9.jpg" align="right"></p><br />
-        <p>Reviews:12.4k&ensp;<a href="" class="topa">More Reviews</a></p>
+        <p>Reviews:12.4k&ensp;<a href="http://www.google.com" target="_blank" class="topa">More Reviews</a></p>
         
     </div>
     <div class="flex-container" float="left">
         <p>Give Review</p>
          <p>
             <div class="search-container2">
-                <form >
+                <form action="/action_page.php">
                     <input type="text" placeholder="Name"  >
                 <br /><input type="text" placeholder="Email-id" width="400px">
                     <br /><br /><br /><br /><br /><br />
@@ -612,7 +615,7 @@
                     <label for="9"><h3 class="hj">09</h3></label><br>
                     <input type="radio" id="10" name="rating" value="10">
                     <label for="10"><h3 class="hj">10</h3></label><br>
-                <br /><button type="submit"  >SUBMIT</button><br />
+                <br /><button type="submit" >SUBMIT</button><br />
                 </form>
                 
             </div><br /><br /><br />
